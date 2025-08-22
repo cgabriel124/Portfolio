@@ -21,6 +21,11 @@ export const personalData = {
     downloadResumeIcon: faFileArrowDown,
 };
 
+export const headerData = {
+  homeIcon: faCode,
+}
+
+
 export const workExperience = [
   {
     company: "Manticore-Labs",
