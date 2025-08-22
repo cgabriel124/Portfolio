@@ -1,0 +1,39 @@
+<span class="flex items-center mt-10 mb-5" appScrollFade>
+    <span class="h-px flex-1 bg-gradient-to-r from-transparent to-gray-300 dark:to-gray-600"></span>
+
+    <span class="shrink-0 px-4 text-gray-900 dark:text-white text-2xl font-bold">Habilidades</span>
+
+    <span class="h-px flex-1 bg-gradient-to-l from-transparent to-gray-300 dark:to-gray-600"></span>
+</span>
+
+<div class="bg-transparent py-8 md:py-16 relative overflow-hidden">
+    @for(skill of skills; track $index){
+    <div class="container max-w-4xl mx-auto px-6 md:px-4 mb-4">
+        <div
+            class="rounded-lg border border-violet-500/15 bg-background/80 backdrop-blur-md backdrop-filter shadow-sm dark:bg-card/30 dark:backdrop-blur-md hover:shadow-md transition-all duration-300 ease-in-out p-4">
+            <h3 class="text-lg font-medium mb-3 text-center md:text-left flex items-center dark:text-white ">
+                {{ skill.name }}
+            </h3>
+            <!-- Badges acumuladas -->
+            @for(item of skill.items; track $index){
+            <app-badges [badgeData]="item" appScrollFade [delay]="$index * 100" [keepInScreen]="false"></app-badges>
+            }
+        </div>
+        </div>
+    }
+
+</div>
+
+<!-- "Insignia con contenido vacio" - si en algun momento se quiere intercalar  --> 
+<!--
+<span
+    class="inline-flex items-center justify-center rounded-full border border-red-500 px-2.5 py-0.5 text-red-700 dark:text-red-100">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="-ms-1 me-1.5 size-4">
+        <path stroke-linecap="round" stroke-linejoin="round"
+            d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+    </svg>
+
+    <p class="text-sm whitespace-nowrap">Failed</p>
+</span>
+-->

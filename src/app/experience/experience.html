@@ -1,0 +1,36 @@
+<span class="flex items-center mt-10 mb-5" appScrollFade>
+    <span class="h-px flex-1 bg-gradient-to-r from-transparent to-gray-300 dark:to-gray-600"></span>
+
+    <span class="shrink-0 px-4 text-gray-900 dark:text-white text-2xl font-bold">Experiencia profesional</span>
+
+    <span class="h-px flex-1 bg-gradient-to-l from-transparent to-gray-300 dark:to-gray-600"></span>
+</span>
+
+<div class="bg-transparent py-8 md:py-16 relative overflow-hidden">
+    <div class="container mx-auto max-w-4xl flex flex-col md:flex-row items-center gap-8 px-4">
+        <ol
+            class="relative space-y-8 before:absolute before:-ml-px before:h-full before:w-0.5 before:rounded-full before:bg-gray-200 dark:before:bg-gray-700">
+            @for(experience of experiences; track $index){
+            <li class="relative -ms-1.5 flex items-start gap-4" appScrollFade [keepInScreen]="false">
+                <span class="size-3 shrink-0 rounded-full bg-blue-600"></span>
+
+                <div class="-mt-2">
+                    <time class="text-xs/none font-medium text-gray-700 dark:text-gray-200">{{ experience.period
+                        }}</time>
+
+                    <h3 class="text-lg font-bold text-gray-900 dark:text-white">{{ experience.position }}</h3>
+                    <h4 class="text-lg font-bold text-gray-900 dark:text-white">{{ experience.company }}</h4>
+
+                    @for(achievment of experience.achievments; track $index){
+                    <p class="mt-0.5 text-sm text-gray-700 dark:text-gray-200">
+                        {{ achievment }}
+                    </p>
+                    }
+                </div>
+            </li>
+            }
+        </ol>
+    </div>
+</div>
+
+

@@ -1,0 +1,43 @@
+<nav class="sticky top-0 bg-transparent z-10 backdrop-filter backdrop-blur-sm">
+  <div class="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+    <div class="h-16 bg-transparent flex items-center justify-between">
+      <div class="flex-shrink-0">
+        <img
+          alt=""
+          src="https://res.cloudinary.com/speedwares/image/upload/v1659284687/windframe-logo-main_daes7r.png"
+          class="invert h-6 w-auto"
+        />
+      </div>
+      <div class="flex-1 justify-center flex flex-wrap">
+        <div class="items-baseline flex space-x-4 flex-wrap justify-center">
+          <a
+            href="#"
+            (click)="scrollTo($event, 'personal-data')"
+            class="text-white font-medium px-3 py-2 rounded-md text-sm hover:text-indigo-600"
+            >Datos personales</a>
+          <a
+            href="#"
+            (click)="scrollTo($event, 'experience')"
+            class="text-white px-3 py-2 rounded-md text-sm font-medium hover:text-indigo-600"
+            >Experiencia</a>
+          <a
+            href="#"
+            (click)="scrollTo($event, 'paper')"
+            class="text-white px-3 py-2 rounded-md text-sm font-medium hover:text-indigo-600"
+          >Artículo</a>
+          <a
+            href="#"
+            (click)="scrollTo($event, 'education')"
+            class="text-white px-3 py-2 rounded-md text-sm font-medium hover:text-indigo-600"
+            >Educación</a>
+          <a
+            href="#"
+            (click)="scrollTo($event, 'skills')"
+            class="text-white px-3 py-2 rounded-md text-sm font-medium hover:text-indigo-600"
+            >Habilidades</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
