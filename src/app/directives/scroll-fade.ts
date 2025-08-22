@@ -6,7 +6,7 @@ import { Directive, ElementRef, Input, OnInit } from '@angular/core';
 export class ScrollFade implements OnInit {
   @Input() delay: number = 0;
   @Input() keepInScreen: boolean = true;
-private isIntersectingOnce = false;
+  private isIntersectingOnce = false;
 
   constructor(private elementRef: ElementRef) {}
 

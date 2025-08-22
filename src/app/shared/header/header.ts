@@ -1,10 +1,13 @@
-import { Component, ElementRef } from '@angular/core';
+import { Component, ElementRef, NgModule, HostListener } from '@angular/core';
 import { headerData } from '../../../lib/data';
 import { FaIconComponent } from '@fortawesome/angular-fontawesome';
+import { CommonModule } from '@angular/common';
+import { ScrollFade } from '../../directives/scroll-fade'
+
 
 @Component({
   selector: 'app-header',
-  imports: [FaIconComponent],
+  imports: [FaIconComponent, CommonModule, ScrollFade],
   templateUrl: './header.html',
   styleUrl: './header.css',
 })
@@ -30,4 +33,18 @@ export class Header {
       });
     }
   }
+
+  isMenuOpen: boolean = false;
+  toggleMenu(): void {
+    this.isMenuOpen = !this.isMenuOpen
+  }
+
+    // Opcional: Cierra el menú si se redimensiona la pantalla a un tamaño grande
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    if (event.target.innerWidth > 768) { // El breakpoint de md en Tailwind
+      this.isMenuOpen = false;
+    }
+  }
+
 }
