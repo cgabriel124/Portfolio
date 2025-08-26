@@ -22,19 +22,23 @@
 
 
       <div class="hidden md:block flex-1 justify-center">
+
         <div class="items-baseline flex space-x-4 flex-wrap justify-center font-bold">
           <a href="#" (click)="scrollTo($event, 'personal-data')"
             class="text-white px-3 py-2 rounded-md text-sm hover:text-indigo-600">Datos personales</a>
           <a href="#" (click)="scrollTo($event, 'experience')"
             class="text-white px-3 py-2 rounded-md text-sm hover:text-indigo-600">Experiencia</a>
-          <a href="#" (click)="scrollTo($event, 'paper')"
-            class="text-white px-3 py-2 rounded-md text-sm hover:text-indigo-600">Artículo</a>
-          <a href="#" (click)="scrollTo($event, 'education')"
-            class="text-white px-3 py-2 rounded-md text-sm hover:text-indigo-600">Educación</a>
           <a href="#" (click)="scrollTo($event, 'skills')"
             class="text-white px-3 py-2 rounded-md text-sm hover:text-indigo-600">Habilidades</a>
+          <a href="#" (click)="scrollTo($event, 'paper')"
+            class="text-white px-3 py-2 rounded-md text-sm hover:text-indigo-600">Artículo</a>
+          <a href="#" (click)="scrollTo($event, 'projects')"
+            class="text-white px-3 py-2 rounded-md text-sm hover:text-indigo-600">Proyectos</a>
+          <a href="#" (click)="scrollTo($event, 'education')"
+            class="text-white px-3 py-2 rounded-md text-sm hover:text-indigo-600">Educación</a>
         </div>
       </div>
+
     </div>
   </div>
 </nav>
@@ -53,22 +57,19 @@
     <a (click)="scrollTo($event, 'experience'); toggleMenu()"
       class="block text-white px-3 py-2 hover:bg-gray-700 transition-all" appScrollFade [keepInScreen]="false"
       [delay]="200">Experiencia</a>
-    <a (click)="scrollTo($event, 'paper'); toggleMenu()"
-      class="block text-white px-3 py-2 hover:bg-gray-700 transition-all" appScrollFade [keepInScreen]="false"
-      [delay]="300">Artículo</a>
-    <a (click)="scrollTo($event, 'education'); toggleMenu()"
-      class="block text-white px-3 py-2 hover:bg-gray-700 transition-all" appScrollFade [keepInScreen]="false"
-      [delay]="400">Educación</a>
+
     <a (click)="scrollTo($event, 'skills'); toggleMenu()"
       class="block text-white px-3 py-2 hover:bg-gray-700 transition-all" appScrollFade [keepInScreen]="false"
       [delay]="500">Habilidades</a>
-
-    <a (click)="scrollTo($event, 'skills'); toggleMenu()"
-      class="block hidden text-white px-3 py-2 hover:bg-gray-700 transition-all" appScrollFade [keepInScreen]="false"
-      [delay]="600">Habilidades</a>
-    <a (click)="scrollTo($event, 'skills'); toggleMenu()"
-      class="block hidden text-white px-3 py-2 hover:bg-gray-700 transition-all" appScrollFade [keepInScreen]="false"
-      [delay]="700">Habilidades</a>
+    <a (click)="scrollTo($event, 'paper'); toggleMenu()"
+      class="block text-white px-3 py-2 hover:bg-gray-700 transition-all" appScrollFade [keepInScreen]="false"
+      [delay]="300">Artículo</a>
+    <a (click)="scrollTo($event, 'projects'); toggleMenu()"
+      class="block text-white px-3 py-2 hover:bg-gray-700 transition-all" appScrollFade [keepInScreen]="false"
+      [delay]="400">Proyectos</a>
+    <a (click)="scrollTo($event, 'education'); toggleMenu()"
+      class="block text-white px-3 py-2 hover:bg-gray-700 transition-all" appScrollFade [keepInScreen]="false"
+      [delay]="400">Educación</a>
 
   </div>
 </div>

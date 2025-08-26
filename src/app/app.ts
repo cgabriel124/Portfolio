@@ -8,9 +8,10 @@ import { Skills } from "./skills/skills";
 import { Background } from "./shared/background/background";
 import { Footer } from "./shared/footer/footer";
 import { Paper } from "./paper/paper";
+import { Projects } from "./projects/projects";
 @Component({
   selector: 'app-root',
-  imports: [Header, PersonalData, Experience, Education, Skills, Background, Footer, Paper],
+  imports: [Header, PersonalData, Experience, Education, Skills, Background, Footer, Paper, Projects],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

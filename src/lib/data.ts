@@ -1,6 +1,10 @@
 import { faGithub, faLinkedin, faHtml5, faCss3, faJs, faReact, faAngular, faJira, faPython, faJava } from '@fortawesome/free-brands-svg-icons';
 import { faLocationDot, faEnvelopeOpen, faFileArrowDown, faUserTie, faCode, faLocation, faAtom, faDatabase, faEyeDropper, faFireFlameCurved, faCodeBranch, faWindowMaximize, faPalette, faChartColumn, faCloud, faCube } from '@fortawesome/free-solid-svg-icons';
 import { Background } from '@tsparticles/engine';
+import { siAngular, siCss, siReact } from 'simple-icons'
+//aqui se pueden ver los iconos
+//https://simpleicons.org/
+
 
 export const personalData = {
     shortName: "Christian",
@@ -24,6 +28,98 @@ export const personalData = {
 export const headerData = {
   homeIcon: faCode,
 }
+
+export const paperData = [
+  { label: "Título", value: "Comparative study of hand-gesture recognition (HGR) models using EMG signals with a focus on intrapersonal variation." },
+  { label: "Editor", value: "IEEE ETCM 2025" },
+  { label: "Estado", value: "Aprobado" },
+  { label: "Fecha de publicación", value: "2025" },
+  { label: "URL", value: "..." },
+  { label: "Resumen", value: "Human intrapersonal variation in hand gesture recognition (HGR) using electromyography (EMG) signals raises concerns about the recognition accuracy of HGR machine learning models. This article presents the results obtained after the evaluation of five machine learning models: SVM, KNN, ANN, CNN, and CNN-LSTM using EMG signal data corresponding to five hand gestures performed by 20 participants over a period of four consecutive months. The models were trained with data from the first month and subsequently tested with data from the following months to analyze the impact of intrapersonal variation on the performance of these models." }
+];
+
+export const projectsInfo = [
+  {
+    name: 'Fútbol API',
+    details: [
+      'API con multiple endpoints para gestionar y organizar partidos de fútbol.',
+      'En PostgreSQL se alamacenan los datos de equipos, jugadores y partidos.',
+    ],
+    tools: [
+      {
+        name: 'Python',
+        icon: faPython,
+        color: 'yellow',
+      },
+      {
+        name: 'Django',
+        icon: faCode,
+        color: 'emerald',
+      },
+      {
+        name: 'PostgreSQL',
+        icon: faDatabase,
+        color: 'blue',
+      },
+    ],
+    url: 'https://github.com/cgabriel124/futbol_api',
+  },
+  {
+    name: 'Fútbol APP',
+    details: [
+      'Aplicación web y móvil para gestionar partidos de fútbol.',
+      'La aplicación tiene un diseño responsivo y la interfaz de usuario es intuitiva y amigable.',
+      'El Frontend consume la API: "Fútbol API".',
+    ],
+    tools: [
+      {
+        name: 'React-Native',
+        icon: siReact,
+        type: 'simple-icons',
+        color: 'sky',
+      },
+      {
+        name: 'JavaScript',
+        icon: faCode,
+        type: 'font-awesome',
+        color: 'yellow',
+      },
+    ],
+    url: 'https://github.com/cgabriel124/futbol_app',
+  },
+  {
+    name: 'Portafolio Web',
+    details: [
+      'Portafolio web personal desarrollado con Angular y Tailwind.',
+      'El proyecto tiene un diseño responsivo y estético.',
+      'La interfaz se adapta a diferentes tamaños de pantalla.',
+    ],
+    tools: [
+      {
+        name: 'Angular',
+        icon: faAngular,
+        color: 'red',
+      },
+      {
+        name: 'TypeScript',
+        icon: faCode,
+        color: 'blue',
+      },
+      {
+        name: 'HTML',
+        icon: faHtml5,
+        color: 'orange',
+      },
+      {
+        name: 'Tailwind',
+        icon: faPalette,
+        color: 'cyan',
+      },
+    ],
+    url: 'https://github.com/cgabriel124/Portfolio',
+
+  },
+];
 
 
 export const workExperience = [
@@ -90,16 +186,19 @@ export const skills = [
       {
         name: 'HTML',
         icon: faHtml5,
+        type: 'font-awesome',
         color: 'orange',
       },
       {
         name: 'CSS',
-        icon: faCode,
+        icon: siCss.path,
+        type: 'simple-icons',
         color: 'blue',
       },
       {
         name: 'Angular',
-        icon: faAngular,
+        icon: siAngular.path,
+        type: 'simple-icons',
         color: 'red',
       },
       {

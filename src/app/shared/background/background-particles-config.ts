@@ -49,7 +49,7 @@ export const PARTICLES_CONFIG: IParticlesProps = {
       color: '#fff',
       distance: 150,
       enable: true,
-      opacity: 0.5,
+      opacity: 0.2,
       width: 1,
     },
     move: {
@@ -71,7 +71,7 @@ export const PARTICLES_CONFIG: IParticlesProps = {
       value: 30,
     },
     opacity: {
-      value: 0.5,
+      value: 0.1,
     },
     shape: {
       type: 'circle',
