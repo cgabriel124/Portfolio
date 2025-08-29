@@ -1,7 +1,7 @@
 import { faGithub, faLinkedin, faHtml5, faCss3, faJs, faReact, faAngular, faJira, faPython, faJava } from '@fortawesome/free-brands-svg-icons';
-import { faLocationDot, faEnvelopeOpen, faFileArrowDown, faUserTie, faCode, faLocation, faAtom, faDatabase, faEyeDropper, faFireFlameCurved, faCodeBranch, faWindowMaximize, faPalette, faChartColumn, faCloud, faCube } from '@fortawesome/free-solid-svg-icons';
+import { faLocationDot, faEnvelopeOpen, faFileArrowDown, faUserTie, faCode, faLocation, faAtom, faDatabase, faEyeDropper, faFireFlameCurved, faCodeBranch, faWindowMaximize, faPalette, faChartColumn, faCloud, faCube, faToolbox, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 import { Background } from '@tsparticles/engine';
-import { siAngular, siCss, siReact } from 'simple-icons'
+import { siAngular, siCplusplus, siCss, siDjango, siDotnet, siFigma, siFirebase, siGit, siJavascript, siJira, siNetapp, siPostgresql, siPostman, siReact, siTailwindcss, siTypescript } from 'simple-icons'
 //aqui se pueden ver los iconos
 //https://simpleicons.org/
 
@@ -53,12 +53,14 @@ export const projectsInfo = [
       },
       {
         name: 'Django',
-        icon: faCode,
+        icon: siDjango.path,
+        type: 'simple-icons',
         color: 'emerald',
       },
       {
         name: 'PostgreSQL',
-        icon: faDatabase,
+        icon: siPostgresql.path,
+        type: 'simple-icons',
         color: 'blue',
       },
     ],
@@ -74,14 +76,14 @@ export const projectsInfo = [
     tools: [
       {
         name: 'React-Native',
-        icon: siReact,
+        icon: siReact.path,
         type: 'simple-icons',
         color: 'sky',
       },
       {
         name: 'JavaScript',
-        icon: faCode,
-        type: 'font-awesome',
+        icon: siJavascript.path,
+        type: 'simple-icons',
         color: 'yellow',
       },
     ],
@@ -181,7 +183,7 @@ export const education = [
 export const skills = [
   {
     name: 'Desarrollo Frontend',
-    icon: faCode,
+    icon: faWindowMaximize,
     items: [
       {
         name: 'HTML',
@@ -203,28 +205,32 @@ export const skills = [
       },
       {
         name: 'React-Native',
-        icon: faAtom,
+        icon: siReact.path,
+        type: 'simple-icons',
         color: 'sky',
       },
       {
         name: 'Tailwind',
-        icon: faPalette,
+        icon: siTailwindcss.path,
+        type: 'simple-icons',
         color: 'cyan',
       }
     ],
   },
   {
     name: 'Desarrollo Backend',
-    icon: faCode,
+    icon: faLaptopCode,
     items: [
       {
         name: 'Django',
-        icon: faCode,
+        icon: siDjango.path,
+        type: 'simple-icons',
         color: 'emerald',
       },
       {
         name: '.NET',
-        icon: faCode,
+        icon: siDotnet.path,
+        type: 'simple-icons',
         color: 'violet',
       },
     ],
@@ -245,24 +251,27 @@ export const skills = [
       },
             {
         name: 'JavaScript',
-        icon: faCode,
+        icon: siJavascript.path,
+        type: 'simple-icons',
         color: 'yellow',
       },
       {
         name: 'TypeScript',
-        icon: faCode,
+        icon: siTypescript.path,
+        type: 'simple-icons',
         color: 'blue',
       },
       {
         name: 'C++',
-        icon: faCode,
+        icon: siCplusplus.path,
+        type: 'simple-icons',
         color: 'cyan',
       },
     ],
   },
   {
     name: 'Bases de Datos',
-    icon: faCode,
+    icon: faDatabase,
     items: [
       {
         name: 'SQL Server',
@@ -271,33 +280,38 @@ export const skills = [
       },
       {
         name: 'PostgreSQL',
-        icon: faDatabase,
+        icon: siPostgresql.path,
+        type: 'simple-icons',
         color: 'blue'
       },
     ],
   },
   {
     name: 'Herramientas y servicios',
-    icon: faCode,
+    icon: faToolbox,
     items: [
       {
         name: 'Jira',
-        icon: faJira,
+        icon: siJira.path,
+        type: 'simple-icons',
         color: 'blue'
       },
       {
         name: 'Firebase',
-        icon: faFireFlameCurved,
+        icon: siFirebase.path,
+        type: 'simple-icons',
         color: 'yellow'
       },
       {
         name: 'Git',
-        icon: faCodeBranch,
+        icon: siGit.path,
+        type: 'simple-icons',
         color: 'red'
       },
       {
         name: 'Figma',
-        icon: faEyeDropper,
+        icon: siFigma.path,
+        type: 'simple-icons',
         color: 'violet'
       },
       {
@@ -307,7 +321,8 @@ export const skills = [
       },
       {
         name: 'Postman',
-        icon: faCode,
+        icon: siPostman.path,
+        type: 'simple-icons',
         color: 'orange'
       },
       {
