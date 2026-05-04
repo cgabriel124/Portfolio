@@ -34,7 +34,7 @@ export const paperData = [
   { label: "Editor", value: "IEEE ETCM 2025" },
   { label: "Estado", value: "Aprobado" },
   { label: "Fecha de publicación", value: "2025" },
-  { label: "URL", value: "..." },
+  { label: "URL", value: "10.1109/ETCM67548.2025.11304423" },
   { label: "Resumen", value: "Human intrapersonal variation in hand gesture recognition (HGR) using electromyography (EMG) signals raises concerns about the recognition accuracy of HGR machine learning models. This article presents the results obtained after the evaluation of five machine learning models: SVM, KNN, ANN, CNN, and CNN-LSTM using EMG signal data corresponding to five hand gestures performed by 20 participants over a period of four consecutive months. The models were trained with data from the first month and subsequently tested with data from the following months to analyze the impact of intrapersonal variation on the performance of these models." }
 ];
 

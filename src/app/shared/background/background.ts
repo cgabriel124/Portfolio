@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { MoveDirection, OutMode, Container } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim";
 import { IParticlesProps, NgParticlesService, NgxParticlesComponent, NgxParticlesModule } from "@tsparticles/angular"
@@ -7,7 +7,7 @@ import { PARTICLES_CONFIG } from './background-particles-config';
 
 @Component({
   selector: 'app-background',
-  imports: [ NgxParticlesModule, CommonModule ],
+  imports: [NgxParticlesModule],
   templateUrl: './background.html',
   styleUrl: './background.css'
 })

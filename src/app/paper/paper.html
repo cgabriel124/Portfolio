@@ -12,13 +12,24 @@
         <div class="flow-root">
             <dl
                 class="-my-3 divide-y divide-gray-200 rounded border border-gray-200 text-sm dark:divide-violet-700/40 dark:border-violet-800/40">
-                
-                    @for(item of paperData; track item.label) {
-                    <div class="grid grid-cols-1 gap-1 p-3 sm:grid-cols-3 sm:gap-4">
-                        <dt class="font-medium text-gray-900 dark:text-white">{{ item.label }}</dt>
-                        <dd class="text-gray-700 sm:col-span-2 dark:text-gray-200">{{ item.value }}</dd>
-                    </div>
+
+                @for(item of paperData; track item.label) {
+                <div class="grid grid-cols-1 gap-1 p-3 sm:grid-cols-3 sm:gap-4">
+                    @if(item.label === "URL") {
+                    <dt class="font-medium text-gray-900 dark:text-white">{{ item.label }}</dt>
+                    <dd class="text-gray-700 sm:col-span-2 dark:text-gray-200">
+                        <a href="https://doi.org/{{ item.value }}" target="_blank"
+                            class="text-blue-600 hover:underline dark:text-blue-400">
+                            {{ item.value }}
+                        </a>
+                    </dd>
                     }
+                    @else {
+                    <dt class="font-medium text-gray-900 dark:text-white">{{ item.label }}</dt>
+                    <dd class="text-gray-700 sm:col-span-2 dark:text-gray-200">{{ item.value }}</dd>
+                    }
+                </div>
+                }
 
             </dl>
         </div>
