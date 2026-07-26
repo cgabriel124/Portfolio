@@ -1,7 +1,7 @@
 import { faGithub, faLinkedin, faHtml5, faCss3, faJs, faReact, faAngular, faJira, faPython, faJava } from '@fortawesome/free-brands-svg-icons';
-import { faLocationDot, faEnvelopeOpen, faFileArrowDown, faUserTie, faCode, faLocation, faAtom, faDatabase, faEyeDropper, faFireFlameCurved, faCodeBranch, faWindowMaximize, faPalette, faChartColumn, faCloud, faCube, faToolbox, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
+import { faLocationDot, faEnvelopeOpen, faFileArrowDown, faUserTie, faCode, faLocation, faAtom, faDatabase, faEyeDropper, faFireFlameCurved, faCodeBranch, faWindowMaximize, faPalette, faChartColumn, faCloud, faCube, faToolbox, faLaptopCode, faVial, faExchange, faLayerGroup, faLanguage } from '@fortawesome/free-solid-svg-icons';
 import { Background } from '@tsparticles/engine';
-import { siAngular, siCplusplus, siCss, siDjango, siDotnet, siFigma, siFirebase, siGit, siJavascript, siJira, siNetapp, siPostgresql, siPostman, siReact, siTailwindcss, siTypescript } from 'simple-icons'
+import { siAngular, siCplusplus, siCss, siDart, siDjango, siDocker, siDotnet, siFastapi, siFigma, siFirebase, siFlutter, siGit, siJavascript, siJira, siNetapp, siOllama, siPostgresql, siPostman, siReact, siTailwindcss, siTypescript, siVite } from 'simple-icons'
 //aqui se pueden ver los iconos
 //https://simpleicons.org/
 
@@ -20,6 +20,8 @@ export const personalData = {
     githubIcon: faGithub,
     linkedin: "https://www.linkedin.com/in/gabriel-nazate-5b3434250/",
     linkedinIcon: faLinkedin,
+    language: "Inglés intermedio",
+    languageIcon: faLanguage,
     //Hoja de vida url
     resume: "",
     downloadResumeIcon: faFileArrowDown,
@@ -39,6 +41,104 @@ export const paperData = [
 ];
 
 export const projectsInfo = [
+  {
+    name: 'MyFinances API',
+    details: [
+      'API de gestión financiera personal con Clean Architecture en .NET y PostgreSQL.',
+      'Integración con microservicios de OCR y LLM (Ollama) para registrar movimientos desde facturas o texto natural.',
+      'Autenticación JWT, casos de uso por dominio y despliegue con Docker Compose.',
+    ],
+    tools: [
+      {
+        name: '.NET',
+        icon: siDotnet.path,
+        type: 'simple-icons',
+        color: 'violet',
+      },
+      {
+        name: 'PostgreSQL',
+        icon: siPostgresql.path,
+        type: 'simple-icons',
+        color: 'blue',
+      },
+      {
+        name: 'Docker',
+        icon: siDocker.path,
+        type: 'simple-icons',
+        color: 'sky',
+      },
+      {
+        name: 'Ollama',
+        icon: siOllama.path,
+        type: 'simple-icons',
+        color: 'slate',
+      },
+    ],
+  },
+  {
+    name: 'MyFinances App',
+    details: [
+      'App móvil de finanzas personales con Flutter: cuentas, movimientos, presupuestos y dashboard.',
+      'Interfaz con tema claro/oscuro, bloqueo biométrico y consumo de la API REST.',
+      'Estado con Riverpod y URL dinámica del backend vía Firebase.',
+    ],
+    tools: [
+      {
+        name: 'Flutter',
+        icon: siFlutter.path,
+        type: 'simple-icons',
+        color: 'sky',
+      },
+      {
+        name: 'Dart',
+        icon: siDart.path,
+        type: 'simple-icons',
+        color: 'cyan',
+      },
+      {
+        name: 'Firebase',
+        icon: siFirebase.path,
+        type: 'simple-icons',
+        color: 'yellow',
+      },
+    ],
+  },
+  {
+    name: 'Fundación Poder',
+    details: [
+      'Sitio institucional para una fundación: proyectos, testimonios con galería, noticias y contacto.',
+      'Interfaz responsiva con tema claro/oscuro y animaciones al scroll.',
+      'Contenido editable desde un archivo central para facilitar el mantenimiento.',
+    ],
+    tools: [
+      {
+        name: 'React',
+        icon: siReact.path,
+        type: 'simple-icons',
+        color: 'sky',
+      },
+      {
+        name: 'TypeScript',
+        icon: siTypescript.path,
+        type: 'simple-icons',
+        color: 'blue',
+      },
+      {
+        name: 'Tailwind CSS',
+        icon: siTailwindcss.path,
+        type: 'simple-icons',
+        color: 'cyan',
+      },
+      {
+        name: 'Vite',
+        icon: siVite.path,
+        type: 'simple-icons',
+        color: 'violet',
+      },
+    ],
+    url: 'https://fundacion-poder.netlify.app/',
+    urlLabel: 'Sitio web',
+  },
   {
     name: 'Fútbol API',
     details: [
@@ -126,6 +226,31 @@ export const projectsInfo = [
 
 export const workExperience = [
   {
+    company: "Transdyr",
+    location: "Quito, Ecuador",
+    position: "Desarrollador Full Stack",
+    period: "Diciembre 2025 - Actualidad",
+    achievments: [
+        "Diseño de la arquitectura del backend de un nuevo aplicativo de la empresa en .NET.",
+        "Desarrollo de interfaces en Angular claras y cómodas para el usuario.",
+        "Migración de bases de datos antiguas y evaluación de transformaciones en los procesos de migración.",
+        "Organización y distribución de las tareas al equipo de trabajo.",
+        "Modelado de bases de datos conforme a los requerimientos.",
+        "Implementación de casos de uso y endpoints REST, aplicando buenas prácticas y Clean Architecture.",
+    ],
+  },
+  {
+    company: "ESOFT",
+    location: "Quito, Ecuador",
+    position: "Quality Assurance / Desarrollador .NET",
+    period: "Septiembre 2025 - Diciembre 2025",
+    achievments: [
+        "Aseguramiento de la calidad de los aplicativos actualizados y desarrollados para CENACE.",
+        "Administración de bases de datos SQL Server: actualización de stored procedures y scripts para optimizar consultas.",
+        "Diagnóstico y corrección de errores en aplicativos desarrollados con .NET Framework 4.",
+    ],
+  },
+  {
     company: "Manticore-Labs",
     location: "Quito, Ecuador",
     position: "Desarrollador Junior",
@@ -163,21 +288,49 @@ export const education = [
   {
     institution: "Escuela Politecnica Nacional",
     location: "Quito-Ecuador",
-    degree: "Ingeniero de Software (Egresado)", 
+    degree: "Ingeniero de Software", 
     period: "2019 - 2025",
     achievments: [
 
     ],
   },
   {
-    school: "Unidad Educativa Pérez Pallares",
+    institution: "Unidad Educativa Pérez Pallares",
     location: "Quito-Ecuador",
     degree: "Bachillerato en Ciencias",
     period: "2015 - 2019",
     achievments: [
 
     ],
-  }
+  },
+  {
+    institution: "Instituto Europeo de Postgrado",
+    location: "Online",
+    degree: "Transformación Digital",
+    period: "2023",
+    achievments: [],
+  },
+  {
+    institution: "AWS Training and Certification",
+    location: "Online",
+    degree: "AWS Well-Architected",
+    period: "2023",
+    achievments: [],
+  },
+  {
+    institution: "Centro de Educación Continua - EPN",
+    location: "Quito, Ecuador",
+    degree: "Advanced Two — Ciclo 2",
+    period: "2022",
+    achievments: [],
+  },
+  {
+    institution: "CertiProf",
+    location: "Online",
+    degree: "Scrum Foundation Professional Certificate (SFPC)",
+    period: "2022",
+    achievments: [],
+  },
 ]
 
 export const skills = [
@@ -204,8 +357,20 @@ export const skills = [
         color: 'red',
       },
       {
+        name: 'React',
+        icon: siReact.path,
+        type: 'simple-icons',
+        color: 'sky',
+      },
+      {
         name: 'React-Native',
         icon: siReact.path,
+        type: 'simple-icons',
+        color: 'sky',
+      },
+      {
+        name: 'Flutter',
+        icon: siFlutter.path,
         type: 'simple-icons',
         color: 'sky',
       },
@@ -233,6 +398,49 @@ export const skills = [
         type: 'simple-icons',
         color: 'violet',
       },
+      {
+        name: 'Clean Architecture',
+        icon: faLayerGroup,
+        color: 'slate',
+      },
+      {
+        name: 'FastAPI',
+        icon: siFastapi.path,
+        type: 'simple-icons',
+        color: 'emerald',
+      },
+    ],
+  },
+  {
+    name: 'IA / LLM',
+    icon: faAtom,
+    items: [
+      {
+        name: 'Prompt Engineering',
+        icon: faAtom,
+        color: 'violet',
+      },
+      {
+        name: 'APIs LLM',
+        icon: faCloud,
+        color: 'cyan',
+      },
+      {
+        name: 'Ollama',
+        icon: siOllama.path,
+        type: 'simple-icons',
+        color: 'slate',
+      },
+      {
+        name: 'Agentes IA',
+        icon: faCube,
+        color: 'emerald',
+      },
+      {
+        name: 'Microservicios IA',
+        icon: faLayerGroup,
+        color: 'violet',
+      },
     ],
   },
   {
@@ -249,7 +457,7 @@ export const skills = [
         icon: faJava,
         color: 'red',
       },
-            {
+      {
         name: 'JavaScript',
         icon: siJavascript.path,
         type: 'simple-icons',
@@ -260,6 +468,12 @@ export const skills = [
         icon: siTypescript.path,
         type: 'simple-icons',
         color: 'blue',
+      },
+      {
+        name: 'Dart',
+        icon: siDart.path,
+        type: 'simple-icons',
+        color: 'cyan',
       },
       {
         name: 'C++',
@@ -284,12 +498,22 @@ export const skills = [
         type: 'simple-icons',
         color: 'blue'
       },
+      {
+        name: 'Migración de BDD',
+        icon: faExchange,
+        color: 'orange'
+      },
     ],
   },
   {
     name: 'Herramientas y servicios',
     icon: faToolbox,
     items: [
+      {
+        name: 'QA',
+        icon: faVial,
+        color: 'emerald'
+      },
       {
         name: 'Jira',
         icon: siJira.path,
@@ -303,10 +527,22 @@ export const skills = [
         color: 'yellow'
       },
       {
+        name: 'Docker',
+        icon: siDocker.path,
+        type: 'simple-icons',
+        color: 'sky'
+      },
+      {
         name: 'Git',
         icon: siGit.path,
         type: 'simple-icons',
         color: 'red'
+      },
+      {
+        name: 'Vite',
+        icon: siVite.path,
+        type: 'simple-icons',
+        color: 'violet'
       },
       {
         name: 'Figma',
