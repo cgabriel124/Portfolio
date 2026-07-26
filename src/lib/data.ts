@@ -295,15 +295,6 @@ export const education = [
     ],
   },
   {
-    institution: "Unidad Educativa Pérez Pallares",
-    location: "Quito-Ecuador",
-    degree: "Bachillerato en Ciencias",
-    period: "2015 - 2019",
-    achievments: [
-
-    ],
-  },
-  {
     institution: "Instituto Europeo de Postgrado",
     location: "Online",
     degree: "Transformación Digital",
@@ -330,6 +321,15 @@ export const education = [
     degree: "Scrum Foundation Professional Certificate (SFPC)",
     period: "2022",
     achievments: [],
+  },
+  {
+    institution: "Unidad Educativa Pérez Pallares",
+    location: "Quito-Ecuador",
+    degree: "Bachillerato en Ciencias",
+    period: "2015 - 2019",
+    achievments: [
+
+    ],
   },
 ]
 
